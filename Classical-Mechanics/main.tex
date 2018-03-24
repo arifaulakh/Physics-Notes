@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{minted}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{chngcntr} 
+\usepackage{enumitem}
+\usepackage{amsthm}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\theoremstyle{plain}
+\newtheorem{definition}{Definition}
+
+
+\title{Classical Mechanics}
+\author{Arif Aulakh}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Statics}
+\subsection{Balancing Forces}
+\begin{definition}[Tension]
+A general name for a force that an object exerts when it is pulled on. 
+\end{definition}
+
+\begin{definition}[Normal Force]
+A force perpendicular to a surface that a surface applies to an object. 
+\end{definition}
+
+\begin{definition}[Friction]
+A force parallel to a surface that a surface applies to an object. 
+\end{definition}
+There are two types of friction forces: "kinetic" and "static. Kinetic friction involves two objects moving relative to each other. It can be said that the kinetic friction between the two objects is proportional to the normal force between them. For this reason, this proportionality can be described as the coefficient of friction, and more formally, be labelled as $\mu_k$, meaning $F = \mu_kN$. Static friction involves two objects which are at rest relative to each other. Unlike with kinetic friction, all that can be said about static friction is that the maximum value of the force of static friction is $F_{\text{max}} = \mu_sN = \mu_smg$.
+\begin{definition}[Gravity]
+The universal force of attraction between all matter. 
+\end{definition}
+
+Using this definition, given two objects $M$ and $m$, with a distance of separation of $R$, Newton's law for a gravitational force states that there is an attractive force between the objects, which has magnitude $F = \dfrac{GMm}{R^2}$, for which $\si{G = 6.67 \cdot 10^{-11} \meter^3/(\kilogram \cdot \second^2)}$. This implies that an object on the surface of the earth feels a gravitational force of equal to
+\begin{align*}
+    F = m \left(\dfrac{GM}{R^2} \right) = mg.
+\end{align*}
+Therefore, every object on the surface of the earth feels of a force of $mg$ downwards, and if the object is not accelerating, there must be other forces acting on the object to make sure the total net force is zero. 
+\subsection{Balancing Torques}
+
+\section{Using $F = ma$}
+\end{document}
